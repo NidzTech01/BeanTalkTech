@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Record System</title>
+    <link rel="stylesheet" href="AC.css">
+</head>
+<body>
+    <h2>Patient Record System</h2>
+
+
+    <div id="patient-record-form">
+        <h3>Add Patient Record</h3>
+        <form id="patient-record" action="patient_record.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <label for="medical_history">Medical History:</label>
+            <textarea id="medical_history" name="medical_history"></textarea><br>
+            <input type="submit" value="Add Record">
+        </form>
+    </div>
+
+    <div id="records-table">
+        <h3>Patient Records</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Medical History</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+
+    <a href="logout.php">Logout</a>
+    <script src="AC.js"></script>
+</body>
+</html>
